@@ -8,11 +8,60 @@ export default function Home() {
         <div className='bg-green-500 p-5'>TESTE</div>
         <div className='bg-green-500 p-5'>TESTE</div>
       </div>
+      <div className='container mx-auto p-5 mt-4 border-red-900 border-2 bg-red-300'>
+        <p>Testando o container</p>
+        <p>Testando o container</p>
+      </div>
       <div className='mt-10'>
         <button className='btn-blue'>Botão</button>
         <button className='bg-green-400 mr-3 hover:bg-green-700 text-white py-2 px-4 rounded'>Botão</button>
         <button className='bg-yellow-400 mr-3 hover:bg-yellow-700 text-white py-2 px-4 rounded'>Botão</button>
         <input type='text' placeholder="Clica em mim" className='bg-gray-300 text-gray-900 focus:bg-red-500' /> 
+      </div>
+      <div className='m-auto flex justify-center items-center w-52 h-52 bg-green-700 md:bg-blue-700'>
+        <div>
+          <p>container</p>
+        </div>
+      </div>
+      <div className='container bg-purple-700 border-2 border-purple-900 border-box m-4 p-10'>
+        <p>Border box</p>
+      </div>
+      <div className='container bg-gray-500 border-2 border-gray-900 box-content m-4 p-10'>
+        <p>Border content</p>
+      </div>
+
+      <div className='container'>
+        <span className='block bg-red-300'>Não são elementos de bloco</span>
+        <span className='block bg-red-300'>Não são elementos de bloco</span>
+      </div>
+      <div className='container bg-red-200 m-6 p-6'>
+        <div className='inline-block bg-red-800'>
+          caixa 1
+        </div>
+        <div className='inline-block bg-blue-800'>
+          caixa 2
+        </div>        
+        <div className='inline-block bg-green-600'>
+          caixa 3
+        </div>
+      </div>
+      <div className='float-right bg-green-600'>
+        Teste float
+      </div>
+      <div className='float-left bg-red-600'>
+        Teste float
+      </div>
+
+      <div className='container relative'>         
+        <div className='bg-yellow-700 h-40 w-40 p-6 absolute z-10'>
+          Na frente
+        </div>
+        <div className='bg-pink-700 h-40 w-40 p-6 absolute z-20 m-4'>
+          Atrás
+        </div>
+        <div className='bg-purple-700 h-40 w-40 p-6 absolute z-30 m-8'>
+          Atrás
+        </div>
       </div>
     </>
   )
