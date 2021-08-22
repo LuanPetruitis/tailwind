@@ -100,7 +100,60 @@ export default function Home() {
         <div className='bg-red-800 order-2 p-6 m-3'>5</div>
         <div className='bg-red-900 order-first p-6 m-3'>6</div>
       </div>
-      
+
+
+      {/* ESTUDANDO JUSTIFY */}
+
+      <div className='flex p-2 bg-red-300 justify-end'>
+        <div className='bg-red-600 h-10'>1</div>
+        <div className='bg-red-600 p-4 m-4'>2</div>
+        <div className='bg-red-600 p-4 m-4'>3</div>
+        <div className='bg-red-600 p-4 m-4'>4</div>
+      </div>      
+
+      <div className='flex p-2 bg-blue-300 justify-center'>
+        <div className='bg-blue-600 p-4 m-4'>1</div>
+        <div className='bg-blue-600 p-4 m-4'>2</div>
+        <div className='bg-blue-600 p-4 m-4'>3</div>
+        <div className='bg-blue-600 p-4 m-4'>4</div>
+      </div>      
+
+      <div className='flex p-2 bg-green-300 justify-between'>
+        <div className='bg-green-600 p-4 m-4'>1</div>
+        <div className='bg-green-600 p-4 m-4'>2</div>
+        <div className='bg-green-600 p-4 m-4'>3</div>
+        <div className='bg-green-600 p-4 m-4'>4</div>
+      </div>    
+
+      <div className='flex p-2 bg-purple-300 justify-around'>
+        <div className='bg-purple-600 p-4 m-4'>1</div>
+        <div className='bg-purple-600 p-4 m-4'>2</div>
+        <div className='bg-purple-600 p-4 m-4'>3</div>
+        <div className='bg-purple-600 p-4 m-4'>4</div>
+      </div>
+
+      {/* ESPAÇAMENTO NO EIXO Y */}
+
+      <div className="bg-green-300 h-40 flex flex-wrap content-center">
+        <div className='bg-green-600 h-10 p-2 mx-4'>1</div>
+        <div className='bg-green-600 h-10 p-2 mx-4'>2</div>
+        <div className='bg-green-600 h-10 p-2 mx-4'>3</div>
+      </div>
+
+      <div className="bg-blue-300  grid grid-cols-3 h-40 place-content-start">
+        <div className='bg-blue-600 p-2 m-2'>1</div>
+        <div className='bg-blue-600 p-2 m-2'>2</div>
+        <div className='bg-blue-600 p-2 m-2'>3</div>
+        <div className='bg-blue-600 p-2 m-2'>3</div>
+        <div className='bg-blue-600 p-2 m-2'>3</div>
+        <div className='bg-blue-600 p-2 m-2'>3</div>
+      </div>
+
+
+      <p className="m-20">Espaçamento</p>      
+      <p className="m-20">Espaçamento</p>      
+      <p className="m-20">Espaçamento</p>      
+      <p className="m-20">Espaçamento</p>      
 
     </>
   )
