@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="m-4">
+        <button id="dark-mode" class="bg-red-400 text-white rounded py-2 px-4">
+            Ativar e desativar dark mode
+        </button>
+    </div>
+    
+    <div class="w-14 h-8">
+        <input type="checkbox" id="dark-mode-toggle" class="hidden" />
+        <label for="dark-mode-toggle" class="border border-black w-full h-full bg-white dark:bg-blue-700 rounded-full p-1 justify-start flex dark:justify-end cursor-pointer">
+            <span class="block w-6 h-6"></span>
+            <span class="w-6 h-6 border border-black rounded-full bg-white block"></span>
+            <!-- <span class="hidden dark:inline">🌛</span> -->
+        </label>
+    </div> 
+
+    <div class="dark:bg-green-500 text-black dark:text-white font-bold text-center p-10">
+        <p>Dark mode</p>
+    </div>
+    <div class="bg-amber-500 dark:bg-amber-900 text-white font-bold text-center p-10">
+        <p>Esse é uma cor nova</p>
+    </div>
+    <div class="bg-rose-500 dark:bg-rose-900 text-white font-bold text-center p-10">
+        <p>Esse é uma cor nova</p>
+    </div>
+
+    <div class="m-6">
+        <form action="">
+            <input type="text" placeholder="Digite o seu nome" class="rounded" />
+            <input type="email" class="form-input px-4 py-3 rounded-full">
+            <input type="checkbox" class="rounded text-pink-500" />
+        </form>
+    </div>
+
+    <script>
+        const btn = document.querySelector('#dark-mode');  
+        const toggle = document.querySelector('#dark-mode-toggle');
+        const html = document.querySelector('html');  
+
+        toggle.addEventListener('click', function () {
+            html.classList.toggle('dark')
+        })
+
+        btn.addEventListener('click', function () {
+            html.classList.toggle('dark')
+        }) 
+    </script>
+</body>
+</html>
