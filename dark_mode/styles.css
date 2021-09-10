@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.test {
+    @apply bg-amber-500 dark:bg-amber-900 text-white hover:text-blue-600 font-bold text-center p-10;
+}
+
+
+/* Fazer o build quando quer adicionar mudanças no tailwind isso não é preciso quando usado no react e next */
+/* npx tailwindcss build -i ./styles.css -o src/css/styles.css */
